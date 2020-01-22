@@ -36,7 +36,7 @@ public class MiniConfiguration {
     public DataSource dataSource() {
         HikariDataSource hikariDataSource = new HikariDataSource();
         hikariDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        hikariDataSource.setJdbcUrl("jdbc:mysql://127.0.0.1:3306/txlcn-demo?characterEncoding=UTF-8&serverTimezone=UTC");
+        hikariDataSource.setJdbcUrl("jdbc:mysql://139.224.195.76:3306/txlcn-demo?characterEncoding=UTF-8&serverTimezone=UTC");
         hikariDataSource.setUsername("root");
         hikariDataSource.setPassword("123456");
         return hikariDataSource;

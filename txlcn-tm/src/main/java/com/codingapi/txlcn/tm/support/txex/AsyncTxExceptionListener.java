@@ -56,7 +56,7 @@ public class AsyncTxExceptionListener implements TxExceptionListener {
             executorService.submit(() -> {
                 try {
                     if (!txManagerConfig.getExUrl().startsWith("http")) {
-                        txManagerConfig.setExUrl("http://127.0.0.1:" + managerServicePort + txManagerConfig.getExUrl());
+                        txManagerConfig.setExUrl("http://139.224.195.76:" + managerServicePort + txManagerConfig.getExUrl());
                     }
                     restTemplate.postForObject(txManagerConfig.getExUrl(), txException, String.class);
                 } catch (Exception ignored) {
